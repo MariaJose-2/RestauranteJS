@@ -1,0 +1,90 @@
+/* Estilo para el título h1 restaurante javascript */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 700%; /*tamaño de la letra*/
+}
+
+/* Estilo para la clase "caja" que envuelve los elementos del formulario */
+.caja {
+    max-width: 500px; /* Ancho máximo de la caja */
+    margin: 0 auto; /* Centrar la caja horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #bae6f2; /* Cambiar el color de fondo */
+    border-radius: 20px; /* redondear el borde */
+}
+
+/* Estilo para el fondo del cuerpo de la página */
+body {
+    background-image: url('restauran.jpg'); /*ruta para la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen al tamaño de la ventana */
+    background-attachment: fixed; /* Fija el fondo para que no se desplace con el contenido */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    font-family: Arial, sans-serif; /* Fuente de texto*/
+}
+
+/* Estilo para los elementos de selección (platos,bebidas) y entrada (cantidad)*/
+.select, .form-control {
+    width: 31%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 5px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Estilo para el botón de "Pagar" */
+.btn {
+    background-color: #0ea1f6; /* Color de fondo del botón */
+    color: white; /* Color de texto del botón */
+    padding: 20px 30px; /* Tamaño del botón */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #17d7fd; /* cambia el color de fondo cuando el cursor se desplaza sobre él */
+}
+
+/* Estilo para las cajas de selección de platos y bebidas */
+.form-selct {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9; /* Color de fondo de las cajas de selección */
+}
+
+/* Estilo para los elementos de selección de platos y bebidas cuando se enfocan (hover) */
+.form-selct:hover {
+    background-color: #d5e3e2e4; /* Color de fondo cuando se pasa el puntero sobre las cajas de selección */
+}
+
+/* Estilo para las opciones de los elementos de selección */
+.form-selct option {
+    font-size: 18px; /* Tamaño de fuente para las opciones */
+}
+
+/* Estilo para aumentar el tamaño de fuente para el campo de cantidad */
+.form-control {
+    font-size: 15px; 
+}
+
+/* Estilo para aumentar el tamaño de fuente de las opciones de los platos */
+#platos option {
+    font-size: 15px; 
+}
+
+/* Estilo para la parte del resultado */
+#respuesta {
+    background-color: #33ddff; /* Color de fondo del resultado */
+    color: rgb(0, 0, 0); /* Color del texto en el resultado */
+    font-size: 24px; /* Tamaño de fuente del resultado */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 10px; /* Espaciado interno del resultado */
+    font-family: Arial, sans-serif; /* Fuente de texto del resultado */
+    border-radius: 10px; /* Bordes redondeados del resultado */
+}

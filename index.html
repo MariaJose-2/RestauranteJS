@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo con javaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="restaurante.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Restaurante javaScript</h1>
+    <div class="caja"> <!-- contenedor principal -->
+
+<!-- Menú desplegable para seleccionar platos -->
+    <select class="form-selct" aria-label="defaul select example" id="platos"> <!-- selecciona la clase para luego identifica las opciones (opcion predeterminada)-->
+    <option selected>Tipo de platos</option> <!-- opciones de platos -->
+    <option value="1">Arroz con pollo</option>
+    <option value="2">Arroz chino</option>
+    <option value="3">Arroz oriental</option>
+    <option value="4">Camarones</option>
+    <option value="5">Langostinos</option>
+    </select>
+    <br>
+
+    <!-- Campo de entrada para la cantidad de platos -->
+    <input type="number" id="n1" class="form-control" placeholder="Cantidad de platos"/> <br/>
+    
+    <!-- Menú desplegable para seleccionar bebidas -->
+    <select class="form-selct" aria-label="defaul select example" id="bebidas"> 
+    <option selected>Tipo de bebidas</option>
+    <option value="1">Limonada de coco</option>
+    <option value="2">Coco loco</option>
+    <option value="3">Brisa marina</option>
+    <option value="4">Piña colada</option>
+    <option value="5">Sangria sin alcohol</option>
+    </select>
+    <br>
+
+    <!-- Campo de entrada para la cantidad de bebidas -->
+    <input type="number" id="n2" class="form-control" placeholder="Cantidad de bebidas"/> <br/>
+
+    <!-- Botón "Pagar" que llama a la función mostrar() cuando se hace clic -->
+    <button onclick="mostrar()" class="btn btn-outline-dark">Pagar</button>
+
+     <!-- Contenedor para mostrar la respuesta, oculto por defecto -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert" id="respuesta">
+    <strong id="resultado"></strong> <!-- Aquí se mostrará el resultado -->
+    </div>
+</body>
+</html>
